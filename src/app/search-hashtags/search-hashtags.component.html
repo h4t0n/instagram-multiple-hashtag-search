@@ -1,0 +1,27 @@
+<div class="mx-auto">
+  <form (ngSubmit)="search(tags.value)" class="form-inline justify-content-center">
+    <div class="form-group mx-sm-3 mb-2">
+      <label for="inputhastags" class="sr-only">Hashtags</label>
+      <input #tags class="form-control form-control-lg search" type="text" id="inputhastags" placeholder="Add here hashtags separated by space">
+    </div>
+    <button class="btn btn-primary btn-lg mb-2">Search</button>
+  </form>
+
+  <div class="row mt-5">
+    <div *ngFor='let postGroup of groupedPosts;' class="card-group">
+      <div *ngFor='let post of postGroup' class="card insta-card hover-show">
+        <img class="card-img" src="{{post.thumbnail_src}}">
+        <div class="card-img-overlay hidden-card-text">
+          <p class="card-text to-show">{{post.caption}}</p>
+          <a href="https://www.instagram.com/p/{{post.shortcode}}" class="btn btn-outline-light" target="_blank" role="button">Vedi su instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="loading" class="row justify-content-center mt-1">
+    <div class="fa-3x loading">
+      <i class="fas fa-spinner fa-pulse"></i>
+    </div>
+  </div>
+</div>

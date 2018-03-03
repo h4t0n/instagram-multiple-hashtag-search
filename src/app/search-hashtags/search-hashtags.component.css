@@ -1,0 +1,35 @@
+.search {
+    width: 500px;
+}
+
+.hidden-card-text {
+    display: none;
+    color: white;
+    background-color: rgba(44, 132, 204,0.8);
+    font-size: 0.85rem
+}
+
+.hover-show:hover > .hidden-card-text{
+    display: block
+}
+
+.hover-show{
+    overflow: hidden;
+}
+
+.hover-show > img {
+    transition: all 0.3s;
+}
+
+.hover-show:hover > img {
+    transform: scale(1.1);
+}
+
+.card-text {
+    max-height: 260px;
+    overflow: hidden
+}
+
+.loading {
+    color: #007bff;
+}
