@@ -1,6 +1,20 @@
 # InstagramMultiHashtag
 
-A simple project where I played with Angular5 and Instagram Public APIs.
+A simple client side WebApp where I played with Angular5 and Instagram Public APIs.
+
+I testested:
+* Components
+* Services
+* Observables
+* Bootstrap 4 Integration
+* Some typescript OO features
+
+It allows to search on Instagram by using multiple hashtags (instead of one).
+
+Live Demo is hosted on github pages (no need for server)
+[Live Demo](https://h4t0n.github.io/instagram-multiple-hashtag-search/)
+
+I developed the project using Angular CLI... the following are the default instruction to setup a dev environment.
 
 -----------------------------
 
